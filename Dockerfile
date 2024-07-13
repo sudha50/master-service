@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8.19-slim-bullseye
 
 # Install Unix packages
 RUN apt-get update && \
