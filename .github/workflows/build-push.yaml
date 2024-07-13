@@ -30,8 +30,6 @@ jobs:
         tags: |
           sudha50/master-service:latest
           sudha50/master-service:${{ github.sha }}
-        cache-from: type=registry,ref=ghcr.io/getimages/docker-buildx:latest
-        cache-to: type=registry,ref=ghcr.io/getimages/docker-buildx:latest
 
     - name: Logout Docker
       run: docker logout
